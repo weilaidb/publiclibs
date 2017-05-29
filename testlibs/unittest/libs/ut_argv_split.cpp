@@ -27,12 +27,6 @@ ut_argv_split::ut_argv_split()
 {
 }
 
-void test_argv_split_funcs()
-{
-    ut_count_argc();
-    ut_argv_free();
-    ut_malloc_free();
-}
 
 
 void ut_count_argc()
@@ -65,7 +59,7 @@ void ut_argv_free()
     argv_free(&argv);
     assert(argv == NULL);
 
-//    argv_free(&argv);
+    argv_free(&argv);
 }
 
 void ut_malloc_free()
@@ -80,5 +74,40 @@ void ut_malloc_free()
 }
 
 
+/*============================================
+* FuncName    : ut_argv_split
+* Description :
+* Author      :
+* Time        : 2017-05-29
+============================================*/
+void ut_argv_split(void)
+{
 
+    const char *s = " first second third fourth 1 2 3 ";
+    int argcp = 0;
+    char **p = argv_split(s, &argcp);
+    assert(argcp == 7);
+
+    assert(0 == strncmp(p[0],"first", strlen("first")));
+    assert(0 == strncmp(p[1],"second", strlen("second")));
+    assert(0 == strncmp(p[2],"third", strlen("third")));
+    assert(0 == strncmp(p[3],"fourth", strlen("fourth")));
+    assert(0 == strncmp(p[4],"1", strlen("1")));
+    assert(0 == strncmp(p[5],"2", strlen("2")));
+    assert(0 == strncmp(p[6],"3", strlen("3")));
+
+    argv_free(&p);
+
+}
+
+
+
+
+void test_argv_split_funcs()
+{
+    ut_count_argc();
+    ut_argv_free();
+    ut_malloc_free();
+    ut_argv_split();
+}
 

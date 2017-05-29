@@ -44,8 +44,18 @@ void ut_skip_arg(void)
     {
         return;
     }
-    printf("p :    %s   \n", p);
+//    printf("p :    %s   \n", p);
     assert(0 == strcmp(cp, p));
+
+
+    cp = "hello world -b";
+    p = skip_arg(cp);
+    if(!p)
+    {
+        return;
+    }
+    assert(0 == strcmp(" world -b", p));
+
 
 //    assert(strncmp());
 

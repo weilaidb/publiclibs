@@ -36,8 +36,10 @@ LINK = $(COMPILE_PEFIX)g++
 LFLAGS = #-EL #-Wl,-O1
 RPATH_LINK = 
 DEFINES = #-D_FILE_OFFSET_BITS=64 
-CFLAGS = -w -fPIC -g -x c -pipe $(EXTRA_OPTS) $(OPT_CFLAGS) -pipe -O2 -g -Wall -W -D_REENTRANT $(DEFINES)#-EL 
-CXXFLAGS = -w -fPIC -g -pipe $(EXTRA_OPTS) $(OPT_CFLAGS) -pipe -O2 -g -Wall -W -D_REENTRANT $(DEFINES)
+# CFLAGS = -w -fPIC -g -x c -pipe $(EXTRA_OPTS) $(OPT_CFLAGS) -pipe -O2 -g -Wall -W -D_REENTRANT $(DEFINES)#-EL 
+# CXXFLAGS = -w -fPIC -g -pipe $(EXTRA_OPTS) $(OPT_CFLAGS) -pipe -O2 -g -Wall -W -D_REENTRANT $(DEFINES)
+CFLAGS = -w -fPIC -g -x c -pipe $(EXTRA_OPTS) $(OPT_CFLAGS) -pipe  -g -Wall -W -D_REENTRANT $(DEFINES)#-EL 
+CXXFLAGS = -w -fPIC -g -pipe $(EXTRA_OPTS) $(OPT_CFLAGS) -pipe  -g -Wall -W -D_REENTRANT $(DEFINES)
 
 
 AR = $(COMPILE_PEFIX)ar rcs

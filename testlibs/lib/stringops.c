@@ -24,8 +24,8 @@ char *skip_spaces(const char *str)
 
 /*============================================
 * FuncName    : skip_arg
-* Description :
-* @cp         :
+* Description : 跳过第一个不是空格的参数
+* @cp         : "a b c" 返回" b c"
 * Author      :
 * Time        : 2017-05-29
 ============================================*/
