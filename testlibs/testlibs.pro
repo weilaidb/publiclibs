@@ -7,12 +7,19 @@ INCLUDEPATH += include \
 
 SOURCES += main.cpp \
     lib/argv_split.c \
-    unittest/libs/ut_argv_split.cpp
+    unittest/libs/ut_argv_split.cpp \
+    unittest/libs/ut_string.cpp \
+    lib/stringops.c \
+    unittest/ReadMe.cpp \
+    lib/ReadMe.c
 
 HEADERS += \
     include/typedefs.h \
     include/defines.h \
     include/argv_split.h \
-    unittest/libs/ut_argv_split.h
+    unittest/libs/ut_argv_split.h \
+    unittest/libs/ut_string.h \
+    include/commonheaders.h \
+    include/stringops.h
 
 

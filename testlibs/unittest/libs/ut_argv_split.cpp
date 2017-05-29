@@ -57,9 +57,9 @@ void ut_argv_free()
     assert(argv != NULL);
 
 #ifdef __WIN32__
-    Sleep(1000);
+//    Sleep(1000);
 #else
-    sleep(1);
+//    sleep(1);
 #endif
 
     argv_free(&argv);
