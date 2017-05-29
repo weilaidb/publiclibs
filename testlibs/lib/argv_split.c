@@ -11,8 +11,8 @@
 
 /*============================================
 * FuncName    : count_argc
-* Description : 
-* @str        : 
+* Description : str以空格分隔的数据个数
+* @str        : 字符串
 * Author      : 
 * Time        : 2017-05-28
 ============================================*/
@@ -33,26 +33,26 @@ int count_argc(const char *str)
 	return count;
 }
 
-///**
-// * argv_free - free an argv
-// * @argv - the argument vector to be freed
-// *
-// * Frees an argv and the strings it points to.
-// */
-///*============================================
-//* FuncName    : argv_free
-//* Description :
-//* @argv       :
-//* Author      :
-//* Time        : 2017-05-28
-//============================================*/
-//void argv_free(char **argv)
-//{
-//	argv--;
-//	kfree(argv[0]);
-//	kfree(argv);
-//}
-////EXPORT_SYMBOL(argv_free);
+/**
+ * argv_free - free an argv
+ * @argv - the argument vector to be freed
+ *
+ * Frees an argv and the strings it points to.
+ */
+/*============================================
+* FuncName    : argv_free
+* Description :
+* @argv       :
+* Author      :
+* Time        : 2017-05-28
+============================================*/
+void argv_free(char **argv)
+{
+    argv--;
+    free(argv[0]);
+    free(argv);
+}
+//EXPORT_SYMBOL(argv_free);
 
 ///**
 // * argv_split - split a string at whitespace, returning an argv

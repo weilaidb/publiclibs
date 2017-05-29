@@ -8,22 +8,7 @@ typedef unsigned char UCHAR;
 typedef short SHORT;
 typedef unsigned short USHORT;
 typedef unsigned char boolean;
-//typedef unsigned char bool;
-
-#ifndef TRUE
-#define TRUE (1)
-#endif
-
-#ifndef FALSE
-#define FALSE (0)
-#endif
-#ifndef true
-#define true (1)
-#endif
-
-#ifndef false
-#define false (0)
-#endif
+typedef unsigned char bool;
 
 
 #endif // TYPEDEFS_H
