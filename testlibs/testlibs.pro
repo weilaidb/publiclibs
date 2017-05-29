@@ -11,7 +11,9 @@ SOURCES += main.cpp \
     unittest/libs/ut_string.cpp \
     lib/stringops.c \
     unittest/ReadMe.cpp \
-    lib/ReadMe.c
+    lib/ReadMe.c \
+    lib/btree.c \
+    lib/slab.c
 
 HEADERS += \
     include/typedefs.h \
@@ -20,6 +22,8 @@ HEADERS += \
     unittest/libs/ut_argv_split.h \
     unittest/libs/ut_string.h \
     include/commonheaders.h \
-    include/stringops.h
+    include/stringops.h \
+    lib/btree.h \
+    lib/slab.h
 
 
