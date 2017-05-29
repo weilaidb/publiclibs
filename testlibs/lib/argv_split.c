@@ -8,6 +8,7 @@
 
 
 #include "typedefs.h"
+#include "defines.h"
 
 /*============================================
 * FuncName    : count_argc
