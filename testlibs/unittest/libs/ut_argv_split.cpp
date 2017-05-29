@@ -2,9 +2,10 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 #include "ut_argv_split.h"
-//#include "typedefs.h"
+#include "typedefs.h"
 #include "defines.h"
 
 #ifdef __cplusplus
@@ -22,7 +23,7 @@ ut_argv_split::ut_argv_split()
 {
 }
 
-void artv_split_funcs()
+void test_argv_split_funcs()
 {
     ut_count_argc();
     ut_argv_free();
@@ -39,13 +40,27 @@ void ut_count_argc()
 
 void ut_argv_free()
 {
-    char *tmp = (char *)malloc(sizeof(char) * 10);
-    char **argv = &tmp;
+    const WORD32 memcount = 100000;
+    char **argv = (char **)malloc(sizeof(char *) * memcount);
+    int i = 0;
+    for(i = 0; i < memcount; i++)
+    {
+        argv[i] = (char *)malloc(100);
+    }
+
     memset(*argv, 0, sizeof(sizeof(char) * 10));
     assert(argv != NULL);
-    argv_free(argv);
-    free(tmp);
-//    delete [] tmp;
+
+#ifdef __WIN32__
+    Sleep(10000);
+#else
+    sleep(10);
+#endif
+
+    argv_free(&argv);
+    assert(argv == NULL);
+
+    argv_free(&argv);
 }
 
 void ut_malloc_free()
@@ -53,6 +68,10 @@ void ut_malloc_free()
     char *tmp = (char *)malloc(10);
     assert(tmp != NULL);
     free(tmp);
+    tmp = NULL;
+    assert(tmp == NULL);
+    free(tmp);
+
 }
 
 

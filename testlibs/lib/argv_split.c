@@ -14,24 +14,24 @@
 * FuncName    : count_argc
 * Description : str以空格分隔的数据个数
 * @str        : 字符串
-* Author      : 
+* Author      :
 * Time        : 2017-05-28
 ============================================*/
 int count_argc(const char *str)
 {
-	int count = 0;
-	bool was_space;
+    int count = 0;
+    bool was_space;
 
-	for (was_space = true; *str; str++) {
-		if (isspace(*str)) {
-			was_space = true;
-		} else if (was_space) {
-			was_space = false;
-			count++;
-		}
-	}
+    for (was_space = true; *str; str++) {
+        if (isspace(*str)) {
+            was_space = true;
+        } else if (was_space) {
+            was_space = false;
+            count++;
+        }
+    }
 
-	return count;
+    return count;
 }
 
 /**
@@ -45,15 +45,25 @@ int count_argc(const char *str)
 * Description :
 * @argv       :
 * Author      :
-* Time        : 2017-05-28
+* Time        : 2017-05-29
 ============================================*/
-void argv_free(char **argv)
+void argv_free(char ***argv)
 {
-    argv--;
-    free(argv[0]);
-    free(argv);
+    char **p;
+    if(!argv || !*argv)
+    {
+        return;
+    }
+    for (p = *argv; *p; p++)
+    {
+        free(*p);
+        *p = NULL;
+    }
+
+    free(*argv);
+    *argv = NULL;
 }
-//EXPORT_SYMBOL(argv_free);
+
 
 ///**
 // * argv_split - split a string at whitespace, returning an argv

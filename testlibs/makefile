@@ -67,8 +67,26 @@ all:helpinfo $(TARGET)
 	@echo "$(MKDIsR) $(EXECDIR)"
 	@$(MKDIR) $(EXECDIR)
 	@$(COPY_FILE) $(TARGET) $(EXECDIR)
+	
+	
+aaa:
+	@echo ==== exec application begin~~~
+	./$(TARGET)
+	@echo ==== exec application done!!
 
+aaa&:
+	@echo ==== exec application begin~~~
+	./$(TARGET)
+	@echo ==== exec application done!!
 
+	
+	
+gdb:
+	@echo ==== exec application begin~~~
+	gdb ./$(TARGET)
+	@echo ==== exec application done!!
+
+	
 $(LIBTARGET): $(LIBSHAREDTARGET) $(LIBTARGET) 
 	@echo " [AR]    ($@)"
 	@$(AR) $@ $(OBJ) $(CPPOBJ)

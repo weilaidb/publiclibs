@@ -7,7 +7,7 @@ public:
     ut_argv_split();
 };
 
-void artv_split_funcs();
+void test_argv_split_funcs();
 
 void ut_count_argc();
 void ut_argv_free();

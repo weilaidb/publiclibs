@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    artv_split_funcs();
+    test_argv_split_funcs();
     cout << "Hello World!" << endl;
     return 0;
 }
