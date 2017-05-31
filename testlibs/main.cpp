@@ -3,6 +3,10 @@
 //for unittest
 #include "ut_argv_split.h"
 #include "ut_string.h"
+#include "ut_list.h"
+#include "ut_log.h"
+#include "ut_alloc.h"
+#include "ut_mutex.h"
 
 /*
 
@@ -22,6 +26,10 @@ int main()
 {
     test_argv_split_funcs();
     test_string();
+    test_list();
+    test_log();
+    test_alloc();
+    test_mutex();
     cout << "Hello World!" << endl;
     return 0;
 }

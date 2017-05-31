@@ -121,8 +121,8 @@ $(TMPOBJPATH)/%.o :%.cpp
 
 clean:
 	@echo " Cleaning... "
-	@echo rm -f $(OBJ) $(CPPOBJ) $(TARGET) $(LIBTARGET) 
-	@rm -f $(OBJ) $(CPPOBJ) $(TARGET) $(LIBTARGET)
+	@echo rm -rf $(OBJ) $(CPPOBJ) $(TARGET) $(LIBTARGET)  $(TMPOBJPATH)
+	@rm -rf $(OBJ) $(CPPOBJ) $(TARGET) $(LIBTARGET)  $(TMPOBJPATH)
 
 helpinfo:
 	@echo =============

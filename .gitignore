@@ -1,0 +1,5 @@
+/testlibs/tmp/utils/source/*.o
+/testlibs/tmp/utils/*.o
+/testlibs-build-desktop-Qt_4_8_1_for_Desktop_-_MinGW__Qt_SDK____/debug/*.o
+/testlibs/tmp/unittest/*.o
+/testlibs/tmp/unittest/source/*.o
