@@ -58,7 +58,13 @@ void ut_nn_mutex_term(void)
 void ut_nn_mutex_lock(void)
 {
 
-    void nn_mutex_lock (nn_mutex_t *self);
+    nn_mutex_t self;
+    nn_mutex_init (&self);
+    nn_mutex_lock (&self);
+    assert(self.mutex.__data.__count == 0/*PTHREAD_MUTEX_INITIALIZER*/);
+    assert(self.mutex.__data.__lock != 0/*PTHREAD_MUTEX_INITIALIZER*/);
+    nn_mutex_unlock(&self);
+    nn_mutex_term(&self);
 
 }
 
@@ -71,8 +77,15 @@ void ut_nn_mutex_lock(void)
 void ut_nn_mutex_unlock(void)
 {
 
-    void nn_mutex_unlock (nn_mutex_t *self);
-
+    nn_mutex_t self;
+    nn_mutex_init (&self);
+    assert(self.mutex.__data.__lock == 0/*PTHREAD_MUTEX_INITIALIZER*/);
+    nn_mutex_lock (&self);
+    assert(self.mutex.__data.__count == 0/*PTHREAD_MUTEX_INITIALIZER*/);
+    assert(self.mutex.__data.__lock != 0/*PTHREAD_MUTEX_INITIALIZER*/);
+    nn_mutex_unlock(&self);
+    assert(self.mutex.__data.__lock == 0/*PTHREAD_MUTEX_INITIALIZER*/);
+    nn_mutex_term(&self);
 }
 
 
