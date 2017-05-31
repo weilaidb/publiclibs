@@ -27,7 +27,9 @@ SOURCES += main.cpp \
     unittest/source/ut_alloc.cpp \
     utils/source/mutex.c \
     utils/source/err.c \
-    unittest/source/ut_mutex.cpp
+    unittest/source/ut_mutex.cpp \
+    utils/source/atomic.c \
+    unittest/source/ut_atomic.cpp
 
 HEADERS += \
     include/typedefs.h \
@@ -42,15 +44,17 @@ HEADERS += \
     utils/include/btree.h \
     utils/include/base64.h \
     utils/include/alloc.h \
+    utils/include/err.h \
     unittest/include/ut_string.h \
     unittest/include/ut_log.h \
     unittest/include/ut_list.h \
     unittest/include/ut_base64.h \
     unittest/include/ut_argv_split.h \
     unittest/include/ut_alloc.h \
-    unittest/include/ut_mutex.h
+    unittest/include/ut_mutex.h \
+    utils/include/atomic.h \
+    unittest/source/ut_atomic.h
     utils/include/mutex.h \
-    include/err.h \
     include/fast.h \
     include/nn.h \
 

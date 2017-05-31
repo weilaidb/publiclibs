@@ -7,6 +7,7 @@
 #include "ut_log.h"
 #include "ut_alloc.h"
 #include "ut_mutex.h"
+#include "ut_atomic.h"
 
 /*
 
@@ -30,6 +31,7 @@ int main()
     test_log();
     test_alloc();
     test_mutex();
+    test_atomic();
     cout << "Hello World!" << endl;
     return 0;
 }
