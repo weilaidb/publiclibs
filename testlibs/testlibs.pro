@@ -29,7 +29,11 @@ SOURCES += main.cpp \
     utils/source/err.c \
     unittest/source/ut_mutex.cpp \
     utils/source/atomic.c \
-    unittest/source/ut_atomic.cpp
+    unittest/source/ut_atomic.cpp \
+    utils/source/chunk.c \
+    utils/source/wire.c \
+    unittest/source/ut_wire.cpp \
+    unittest/source/ut_chunk.cpp
 
 HEADERS += \
     include/typedefs.h \
@@ -53,7 +57,11 @@ HEADERS += \
     unittest/include/ut_alloc.h \
     unittest/include/ut_mutex.h \
     utils/include/atomic.h \
-    unittest/source/ut_atomic.h
+    unittest/source/ut_atomic.h \
+    utils/include/chunk.h \
+    utils/include/wire.h \
+    unittest/include/ut_wire.h \
+    unittest/include/ut_chunk.h
     utils/include/mutex.h \
     include/fast.h \
     include/nn.h \

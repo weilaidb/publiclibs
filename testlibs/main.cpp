@@ -8,6 +8,8 @@
 #include "ut_alloc.h"
 #include "ut_mutex.h"
 #include "ut_atomic.h"
+#include "ut_wire.h"
+#include "ut_chunk.h"
 
 /*
 
@@ -32,6 +34,8 @@ int main()
     test_alloc();
     test_mutex();
     test_atomic();
+    test_wire();
+    test_chunk();
     cout << "Hello World!" << endl;
     return 0;
 }
