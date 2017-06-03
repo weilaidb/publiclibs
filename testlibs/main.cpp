@@ -11,6 +11,7 @@
 #include "ut_wire.h"
 #include "ut_chunk.h"
 #include "ut_queue.h"
+#include "ut_lists.h"
 
 /*
 
@@ -38,8 +39,9 @@ int main()
     test_wire();
     test_chunk();
     test_queue();
+    test_lists();
 
-    cout << "Hello World!" << endl;
+    cout << "Hello World! My Love Baby!!!" << endl;
     return 0;
 }
 

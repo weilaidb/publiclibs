@@ -41,6 +41,13 @@ CMakeFiles/publiclibs.dir/utils/source/err.c.o
  ../include/nn.h
  ../utils/include/err.h
  /home/weilaidb/publiclibs/testlibs/utils/source/err.c
+CMakeFiles/publiclibs.dir/utils/source/lists.c.o
+ ../include/attr.h
+ ../include/fast.h
+ ../include/nn.h
+ ../utils/include/err.h
+ ../utils/include/lists.h
+ /home/weilaidb/publiclibs/testlibs/utils/source/lists.c
 CMakeFiles/publiclibs.dir/utils/source/log.c.o
  ../utils/include/log.h
  /home/weilaidb/publiclibs/testlibs/utils/source/log.c
@@ -71,8 +78,10 @@ CMakeFiles/publiclibs.dir/main.cpp.o
  ../unittest/include/ut_argv_split.h
  ../unittest/include/ut_chunk.h
  ../unittest/include/ut_list.h
+ ../unittest/include/ut_lists.h
  ../unittest/include/ut_log.h
  ../unittest/include/ut_mutex.h
+ ../unittest/include/ut_queue.h
  ../unittest/include/ut_string.h
  ../unittest/include/ut_wire.h
  ../unittest/source/ut_atomic.h
@@ -107,6 +116,12 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o
  ../include/list.h
  ../unittest/include/ut_list.h
  /home/weilaidb/publiclibs/testlibs/unittest/source/ut_list.cpp
+CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o
+ ../include/attr.h
+ ../include/commonheaders.h
+ ../include/defines.h
+ ../utils/include/lists.h
+ /home/weilaidb/publiclibs/testlibs/unittest/source/ut_lists.cpp
 CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o
  ../include/commonheaders.h
  ../unittest/include/ut_log.h
@@ -120,6 +135,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o
  /home/weilaidb/publiclibs/testlibs/unittest/source/ut_mutex.cpp
 CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o
  ../include/commonheaders.h
+ ../include/defines.h
  ../utils/include/queue.h
  /home/weilaidb/publiclibs/testlibs/unittest/source/ut_queue.cpp
 CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o

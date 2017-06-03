@@ -13,6 +13,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/publiclibs.dir/utils/source/btree.c.o"
   "CMakeFiles/publiclibs.dir/utils/source/queue.c.o"
   "CMakeFiles/publiclibs.dir/utils/source/err.c.o"
+  "CMakeFiles/publiclibs.dir/utils/source/lists.c.o"
   "CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o"
   "CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o"
   "CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o"
@@ -24,6 +25,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o"
   "CMakeFiles/publiclibs.dir/unittest/source/ut_atomic.cpp.o"
   "CMakeFiles/publiclibs.dir/unittest/source/ut_argv_split.cpp.o"
+  "CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o"
   "publiclibs.pdb"
   "publiclibs"
 )

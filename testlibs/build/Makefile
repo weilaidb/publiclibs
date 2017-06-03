@@ -282,6 +282,30 @@ unittest/source/ut_list.cpp.s:
 	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.s
 .PHONY : unittest/source/ut_list.cpp.s
 
+unittest/source/ut_lists.o: unittest/source/ut_lists.cpp.o
+.PHONY : unittest/source/ut_lists.o
+
+# target to build an object file
+unittest/source/ut_lists.cpp.o:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o
+.PHONY : unittest/source/ut_lists.cpp.o
+
+unittest/source/ut_lists.i: unittest/source/ut_lists.cpp.i
+.PHONY : unittest/source/ut_lists.i
+
+# target to preprocess a source file
+unittest/source/ut_lists.cpp.i:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.i
+.PHONY : unittest/source/ut_lists.cpp.i
+
+unittest/source/ut_lists.s: unittest/source/ut_lists.cpp.s
+.PHONY : unittest/source/ut_lists.s
+
+# target to generate assembly for a file
+unittest/source/ut_lists.cpp.s:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.s
+.PHONY : unittest/source/ut_lists.cpp.s
+
 unittest/source/ut_log.o: unittest/source/ut_log.cpp.o
 .PHONY : unittest/source/ut_log.o
 
@@ -570,6 +594,30 @@ utils/source/err.c.s:
 	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/err.c.s
 .PHONY : utils/source/err.c.s
 
+utils/source/lists.o: utils/source/lists.c.o
+.PHONY : utils/source/lists.o
+
+# target to build an object file
+utils/source/lists.c.o:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/lists.c.o
+.PHONY : utils/source/lists.c.o
+
+utils/source/lists.i: utils/source/lists.c.i
+.PHONY : utils/source/lists.i
+
+# target to preprocess a source file
+utils/source/lists.c.i:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/lists.c.i
+.PHONY : utils/source/lists.c.i
+
+utils/source/lists.s: utils/source/lists.c.s
+.PHONY : utils/source/lists.s
+
+# target to generate assembly for a file
+utils/source/lists.c.s:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/lists.c.s
+.PHONY : utils/source/lists.c.s
+
 utils/source/log.o: utils/source/log.c.o
 .PHONY : utils/source/log.o
 
@@ -744,6 +792,9 @@ help:
 	@echo "... unittest/source/ut_list.o"
 	@echo "... unittest/source/ut_list.i"
 	@echo "... unittest/source/ut_list.s"
+	@echo "... unittest/source/ut_lists.o"
+	@echo "... unittest/source/ut_lists.i"
+	@echo "... unittest/source/ut_lists.s"
 	@echo "... unittest/source/ut_log.o"
 	@echo "... unittest/source/ut_log.i"
 	@echo "... unittest/source/ut_log.s"
@@ -780,6 +831,9 @@ help:
 	@echo "... utils/source/err.o"
 	@echo "... utils/source/err.i"
 	@echo "... utils/source/err.s"
+	@echo "... utils/source/lists.o"
+	@echo "... utils/source/lists.i"
+	@echo "... utils/source/lists.s"
 	@echo "... utils/source/log.o"
 	@echo "... utils/source/log.i"
 	@echo "... utils/source/log.s"

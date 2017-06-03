@@ -41,6 +41,13 @@ CMakeFiles/publiclibs.dir/utils/source/err.c.o: ../include/nn.h
 CMakeFiles/publiclibs.dir/utils/source/err.c.o: ../utils/include/err.h
 CMakeFiles/publiclibs.dir/utils/source/err.c.o: ../utils/source/err.c
 
+CMakeFiles/publiclibs.dir/utils/source/lists.c.o: ../include/attr.h
+CMakeFiles/publiclibs.dir/utils/source/lists.c.o: ../include/fast.h
+CMakeFiles/publiclibs.dir/utils/source/lists.c.o: ../include/nn.h
+CMakeFiles/publiclibs.dir/utils/source/lists.c.o: ../utils/include/err.h
+CMakeFiles/publiclibs.dir/utils/source/lists.c.o: ../utils/include/lists.h
+CMakeFiles/publiclibs.dir/utils/source/lists.c.o: ../utils/source/lists.c
+
 CMakeFiles/publiclibs.dir/utils/source/log.c.o: ../utils/include/log.h
 CMakeFiles/publiclibs.dir/utils/source/log.c.o: ../utils/source/log.c
 
@@ -70,8 +77,10 @@ CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_alloc.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_argv_split.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_chunk.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_list.h
+CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_lists.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_log.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_mutex.h
+CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_queue.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_string.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/include/ut_wire.h
 CMakeFiles/publiclibs.dir/main.cpp.o: ../unittest/source/ut_atomic.h
@@ -107,6 +116,12 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o: ../include/list.h
 CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o: ../unittest/include/ut_list.h
 CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o: ../unittest/source/ut_list.cpp
 
+CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o: ../include/attr.h
+CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o: ../include/commonheaders.h
+CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o: ../include/defines.h
+CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o: ../utils/include/lists.h
+CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o: ../unittest/source/ut_lists.cpp
+
 CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o: ../include/commonheaders.h
 CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o: ../unittest/include/ut_log.h
 CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o: ../utils/include/log.h
@@ -119,6 +134,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o: ../utils/include/mutex
 CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o: ../unittest/source/ut_mutex.cpp
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o: ../include/commonheaders.h
+CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o: ../include/defines.h
 CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o: ../utils/include/queue.h
 CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o: ../unittest/source/ut_queue.cpp
 
