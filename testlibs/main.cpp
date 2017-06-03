@@ -10,6 +10,7 @@
 #include "ut_atomic.h"
 #include "ut_wire.h"
 #include "ut_chunk.h"
+#include "ut_queue.h"
 
 /*
 
@@ -36,6 +37,8 @@ int main()
     test_atomic();
     test_wire();
     test_chunk();
+    test_queue();
+
     cout << "Hello World!" << endl;
     return 0;
 }

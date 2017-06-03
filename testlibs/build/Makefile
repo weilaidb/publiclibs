@@ -330,6 +330,30 @@ unittest/source/ut_mutex.cpp.s:
 	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.s
 .PHONY : unittest/source/ut_mutex.cpp.s
 
+unittest/source/ut_queue.o: unittest/source/ut_queue.cpp.o
+.PHONY : unittest/source/ut_queue.o
+
+# target to build an object file
+unittest/source/ut_queue.cpp.o:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o
+.PHONY : unittest/source/ut_queue.cpp.o
+
+unittest/source/ut_queue.i: unittest/source/ut_queue.cpp.i
+.PHONY : unittest/source/ut_queue.i
+
+# target to preprocess a source file
+unittest/source/ut_queue.cpp.i:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.i
+.PHONY : unittest/source/ut_queue.cpp.i
+
+unittest/source/ut_queue.s: unittest/source/ut_queue.cpp.s
+.PHONY : unittest/source/ut_queue.s
+
+# target to generate assembly for a file
+unittest/source/ut_queue.cpp.s:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.s
+.PHONY : unittest/source/ut_queue.cpp.s
+
 unittest/source/ut_string.o: unittest/source/ut_string.cpp.o
 .PHONY : unittest/source/ut_string.o
 
@@ -594,6 +618,30 @@ utils/source/mutex.c.s:
 	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/mutex.c.s
 .PHONY : utils/source/mutex.c.s
 
+utils/source/queue.o: utils/source/queue.c.o
+.PHONY : utils/source/queue.o
+
+# target to build an object file
+utils/source/queue.c.o:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/queue.c.o
+.PHONY : utils/source/queue.c.o
+
+utils/source/queue.i: utils/source/queue.c.i
+.PHONY : utils/source/queue.i
+
+# target to preprocess a source file
+utils/source/queue.c.i:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/queue.c.i
+.PHONY : utils/source/queue.c.i
+
+utils/source/queue.s: utils/source/queue.c.s
+.PHONY : utils/source/queue.s
+
+# target to generate assembly for a file
+utils/source/queue.c.s:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/utils/source/queue.c.s
+.PHONY : utils/source/queue.c.s
+
 utils/source/slab.o: utils/source/slab.c.o
 .PHONY : utils/source/slab.o
 
@@ -702,6 +750,9 @@ help:
 	@echo "... unittest/source/ut_mutex.o"
 	@echo "... unittest/source/ut_mutex.i"
 	@echo "... unittest/source/ut_mutex.s"
+	@echo "... unittest/source/ut_queue.o"
+	@echo "... unittest/source/ut_queue.i"
+	@echo "... unittest/source/ut_queue.s"
 	@echo "... unittest/source/ut_string.o"
 	@echo "... unittest/source/ut_string.i"
 	@echo "... unittest/source/ut_string.s"
@@ -735,6 +786,9 @@ help:
 	@echo "... utils/source/mutex.o"
 	@echo "... utils/source/mutex.i"
 	@echo "... utils/source/mutex.s"
+	@echo "... utils/source/queue.o"
+	@echo "... utils/source/queue.i"
+	@echo "... utils/source/queue.s"
 	@echo "... utils/source/slab.o"
 	@echo "... utils/source/slab.i"
 	@echo "... utils/source/slab.s"

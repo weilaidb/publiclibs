@@ -14,6 +14,7 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/weilaidb/publiclibs/testlibs/utils/source/err.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/err.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/log.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/log.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/mutex.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/mutex.c.o"
+  "/home/weilaidb/publiclibs/testlibs/utils/source/queue.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/queue.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/slab.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/slab.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/stringops.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/stringops.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/wire.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/wire.c.o"
@@ -29,6 +30,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_list.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_log.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_mutex.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o"
+  "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_queue.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_string.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_wire.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o"
   )

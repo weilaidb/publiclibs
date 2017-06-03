@@ -10,17 +10,18 @@ COMPILE_DIR = $(shell pwd)
 TARGET  = aaa_$(shell basename $(COMPILE_DIR))
 
 SUBDIR = .
-SRC_INC_DIR    = $(shell find . -type d)
+CMAKEPATH=build
+SRC_INC_DIR    = $(shell find ${SUBDIR} -type d | grep -v "${CMAKEPATH}\|${TMPOBJPATH}")
 SRC_INC	 = $(SRC_INC_DIR:%=-I%)
-LOCAL_INC       = $(SRC_INC) -Iinclude -Iinclude/freetype 
+LOCAL_INC       = $(SRC_INC) ##-Iinclude -Iinclude/freetype 
 INCPATH	 = $(LOCAL_INC)
 TMPOBJPATH      = ./tmp
 #LOCALDIR       = `pwd`
 LOCAL_LIBDIR    = #lib
-LOCAL_LIBS      = -lpthread -lzmq #-Llib #-lporting
+LOCAL_LIBS      = -lpthread ##-lzmq #-Llib #-lporting
 LIBS = $(LOCAL_LIBS) $(RPATH_LINK) 
-SRC     = $(shell find $(SUBDIR) -name '*.c')
-CPPSRC  = $(shell find $(SUBDIR) -name '*.cpp') 
+SRC     = $(shell find $(SUBDIR) -name '*.c' | grep -v ${CMAKEPATH})
+CPPSRC  = $(shell find $(SUBDIR) -name '*.cpp' | grep -v ${CMAKEPATH}) 
 OBJ     = $(SRC:%.c=$(TMPOBJPATH)/%.o)
 CPPOBJ  = $(CPPSRC:%.cpp=$(TMPOBJPATH)/%.o)
 LIBTARGET       = 
@@ -126,5 +127,6 @@ clean:
 
 helpinfo:
 	@echo =============
-	@echo =============INCPATH is $(INCPATH)
+	@echo =============INCPATH     is $(INCPATH)
+	@echo =============SRC_INC_DIR is $(SRC_INC_DIR)
 	@echo =============
