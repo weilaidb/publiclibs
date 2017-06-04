@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "version.h"
 //for unittest
 #include "ut_argv_split.h"
 #include "ut_string.h"
@@ -12,6 +12,7 @@
 #include "ut_chunk.h"
 #include "ut_queue.h"
 #include "ut_lists.h"
+#include "ut_literal.h"
 
 /*
 
@@ -29,6 +30,8 @@ using namespace std;
 
 int main()
 {
+    cout << "==Ver: " << version  << "==="<< endl;
+
     test_argv_split_funcs();
     test_string();
     test_list();
@@ -40,6 +43,7 @@ int main()
     test_chunk();
     test_queue();
     test_lists();
+    test_literal();
 
     cout << "Hello World! My Love Baby!!!" << endl;
     return 0;

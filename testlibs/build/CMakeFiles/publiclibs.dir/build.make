@@ -397,9 +397,32 @@ CMakeFiles/publiclibs.dir/utils/source/lists.c.o.provides: CMakeFiles/publiclibs
 
 CMakeFiles/publiclibs.dir/utils/source/lists.c.o.provides.build: CMakeFiles/publiclibs.dir/utils/source/lists.c.o
 
+CMakeFiles/publiclibs.dir/tranports/source/literal.c.o: CMakeFiles/publiclibs.dir/flags.make
+CMakeFiles/publiclibs.dir/tranports/source/literal.c.o: ../tranports/source/literal.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/publiclibs.dir/tranports/source/literal.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/publiclibs.dir/tranports/source/literal.c.o   -c /home/weilaidb/publiclibs/testlibs/tranports/source/literal.c
+
+CMakeFiles/publiclibs.dir/tranports/source/literal.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/publiclibs.dir/tranports/source/literal.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/weilaidb/publiclibs/testlibs/tranports/source/literal.c > CMakeFiles/publiclibs.dir/tranports/source/literal.c.i
+
+CMakeFiles/publiclibs.dir/tranports/source/literal.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/publiclibs.dir/tranports/source/literal.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/weilaidb/publiclibs/testlibs/tranports/source/literal.c -o CMakeFiles/publiclibs.dir/tranports/source/literal.c.s
+
+CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.requires:
+.PHONY : CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.requires
+
+CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.provides: CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.requires
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.provides.build
+.PHONY : CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.provides
+
+CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.provides.build: CMakeFiles/publiclibs.dir/tranports/source/literal.c.o
+
 CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o: ../unittest/source/ut_alloc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_alloc.cpp
 
@@ -422,7 +445,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o: ../unittest/source/ut_string.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_string.cpp
 
@@ -445,7 +468,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o.provides.build: CMakeF
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o: ../unittest/source/ut_chunk.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_chunk.cpp
 
@@ -468,7 +491,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o: ../unittest/source/ut_mutex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_mutex.cpp
 
@@ -491,7 +514,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o: ../unittest/source/ut_list.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_list.cpp
 
@@ -512,9 +535,32 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o.provides: CMakeFiles/pub
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o.provides.build: CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o
 
+CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o: CMakeFiles/publiclibs.dir/flags.make
+CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o: ../unittest/source/ut_literal.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_literal.cpp
+
+CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/weilaidb/publiclibs/testlibs/unittest/source/ut_literal.cpp > CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.i
+
+CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/weilaidb/publiclibs/testlibs/unittest/source/ut_literal.cpp -o CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.s
+
+CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.requires:
+.PHONY : CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.requires
+
+CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.provides: CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.requires
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.provides.build
+.PHONY : CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.provides
+
+CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.provides.build: CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o
+
 CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o: ../unittest/source/ut_log.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_log.cpp
 
@@ -537,7 +583,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o: ../unittest/source/ut_wire.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_wire.cpp
 
@@ -560,7 +606,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o: ../unittest/source/ut_base64.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_base64.cpp
 
@@ -583,7 +629,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o.provides.build: CMakeF
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o: ../unittest/source/ut_queue.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_queue.cpp
 
@@ -606,7 +652,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_atomic.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_atomic.cpp.o: ../unittest/source/ut_atomic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_atomic.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_atomic.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_atomic.cpp
 
@@ -629,7 +675,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_atomic.cpp.o.provides.build: CMakeF
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_argv_split.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_argv_split.cpp.o: ../unittest/source/ut_argv_split.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_argv_split.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_argv_split.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_argv_split.cpp
 
@@ -652,7 +698,7 @@ CMakeFiles/publiclibs.dir/unittest/source/ut_argv_split.cpp.o.provides.build: CM
 
 CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o: CMakeFiles/publiclibs.dir/flags.make
 CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o: ../unittest/source/ut_lists.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/weilaidb/publiclibs/testlibs/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o -c /home/weilaidb/publiclibs/testlibs/unittest/source/ut_lists.cpp
 
@@ -690,11 +736,13 @@ publiclibs_OBJECTS = \
 "CMakeFiles/publiclibs.dir/utils/source/queue.c.o" \
 "CMakeFiles/publiclibs.dir/utils/source/err.c.o" \
 "CMakeFiles/publiclibs.dir/utils/source/lists.c.o" \
+"CMakeFiles/publiclibs.dir/tranports/source/literal.c.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o" \
+"CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o" \
 "CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o" \
@@ -721,11 +769,13 @@ publiclibs: CMakeFiles/publiclibs.dir/utils/source/btree.c.o
 publiclibs: CMakeFiles/publiclibs.dir/utils/source/queue.c.o
 publiclibs: CMakeFiles/publiclibs.dir/utils/source/err.c.o
 publiclibs: CMakeFiles/publiclibs.dir/utils/source/lists.c.o
+publiclibs: CMakeFiles/publiclibs.dir/tranports/source/literal.c.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o
+publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o
 publiclibs: CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o
@@ -758,11 +808,13 @@ CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/utils/source/btree
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/utils/source/queue.c.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/utils/source/err.c.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/utils/source/lists.c.o.requires
+CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/tranports/source/literal.c.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_alloc.cpp.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_string.cpp.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o.requires
+CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_wire.cpp.o.requires
 CMakeFiles/publiclibs.dir/requires: CMakeFiles/publiclibs.dir/unittest/source/ut_base64.cpp.o.requires

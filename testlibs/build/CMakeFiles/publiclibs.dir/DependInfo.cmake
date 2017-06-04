@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
+  "/home/weilaidb/publiclibs/testlibs/tranports/source/literal.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/tranports/source/literal.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/alloc.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/alloc.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/argv_split.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/argv_split.c.o"
   "/home/weilaidb/publiclibs/testlibs/utils/source/atomic.c" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/utils/source/atomic.c.o"
@@ -30,6 +31,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_chunk.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_chunk.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_list.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_list.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_lists.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.o"
+  "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_literal.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_log.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_log.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_mutex.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_mutex.cpp.o"
   "/home/weilaidb/publiclibs/testlibs/unittest/source/ut_queue.cpp" "/home/weilaidb/publiclibs/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/ut_queue.cpp.o"
@@ -46,8 +48,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../utils/include"
+  "../tranports/include"
   "../unittest/include"
-  "../unittest/source"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

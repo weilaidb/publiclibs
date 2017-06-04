@@ -4,11 +4,12 @@ PROJECT(PUBLICLIBS) #项目名称
 #把当前目录(.)下所有源代码文件和头文件加入变量SRC_LIST
 AUX_SOURCE_DIRECTORY(. SRC_LIST)
 AUX_SOURCE_DIRECTORY(./utils/source SRC_LIST)
+AUX_SOURCE_DIRECTORY(./tranports/source SRC_LIST)
 AUX_SOURCE_DIRECTORY(./unittest/source SRC_LIST)
 include_directories(include)
 include_directories(utils/include)
+include_directories(tranports/include)
 include_directories(unittest/include)
-include_directories(unittest/source)
 ##target_link_libraries(pthread)
 FIND_LIBRARY(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)
 link_libraries(${COMM_LIB} ${RUNTIME_LIB})

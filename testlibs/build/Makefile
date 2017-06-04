@@ -138,6 +138,30 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tranports/source/literal.o: tranports/source/literal.c.o
+.PHONY : tranports/source/literal.o
+
+# target to build an object file
+tranports/source/literal.c.o:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/tranports/source/literal.c.o
+.PHONY : tranports/source/literal.c.o
+
+tranports/source/literal.i: tranports/source/literal.c.i
+.PHONY : tranports/source/literal.i
+
+# target to preprocess a source file
+tranports/source/literal.c.i:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/tranports/source/literal.c.i
+.PHONY : tranports/source/literal.c.i
+
+tranports/source/literal.s: tranports/source/literal.c.s
+.PHONY : tranports/source/literal.s
+
+# target to generate assembly for a file
+tranports/source/literal.c.s:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/tranports/source/literal.c.s
+.PHONY : tranports/source/literal.c.s
+
 unittest/source/ut_alloc.o: unittest/source/ut_alloc.cpp.o
 .PHONY : unittest/source/ut_alloc.o
 
@@ -305,6 +329,30 @@ unittest/source/ut_lists.s: unittest/source/ut_lists.cpp.s
 unittest/source/ut_lists.cpp.s:
 	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_lists.cpp.s
 .PHONY : unittest/source/ut_lists.cpp.s
+
+unittest/source/ut_literal.o: unittest/source/ut_literal.cpp.o
+.PHONY : unittest/source/ut_literal.o
+
+# target to build an object file
+unittest/source/ut_literal.cpp.o:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.o
+.PHONY : unittest/source/ut_literal.cpp.o
+
+unittest/source/ut_literal.i: unittest/source/ut_literal.cpp.i
+.PHONY : unittest/source/ut_literal.i
+
+# target to preprocess a source file
+unittest/source/ut_literal.cpp.i:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.i
+.PHONY : unittest/source/ut_literal.cpp.i
+
+unittest/source/ut_literal.s: unittest/source/ut_literal.cpp.s
+.PHONY : unittest/source/ut_literal.s
+
+# target to generate assembly for a file
+unittest/source/ut_literal.cpp.s:
+	$(MAKE) -f CMakeFiles/publiclibs.dir/build.make CMakeFiles/publiclibs.dir/unittest/source/ut_literal.cpp.s
+.PHONY : unittest/source/ut_literal.cpp.s
 
 unittest/source/ut_log.o: unittest/source/ut_log.cpp.o
 .PHONY : unittest/source/ut_log.o
@@ -774,6 +822,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tranports/source/literal.o"
+	@echo "... tranports/source/literal.i"
+	@echo "... tranports/source/literal.s"
 	@echo "... unittest/source/ut_alloc.o"
 	@echo "... unittest/source/ut_alloc.i"
 	@echo "... unittest/source/ut_alloc.s"
@@ -795,6 +846,9 @@ help:
 	@echo "... unittest/source/ut_lists.o"
 	@echo "... unittest/source/ut_lists.i"
 	@echo "... unittest/source/ut_lists.s"
+	@echo "... unittest/source/ut_literal.o"
+	@echo "... unittest/source/ut_literal.i"
+	@echo "... unittest/source/ut_literal.s"
 	@echo "... unittest/source/ut_log.o"
 	@echo "... unittest/source/ut_log.i"
 	@echo "... unittest/source/ut_log.s"

@@ -4,3 +4,6 @@
 /testlibs/tmp/unittest/*.o
 /testlibs/tmp/unittest/source/*.o
 /testlibs/tmp/*.o
+/testlibs/tmp/tranports/source/*.o
+/testlibs/build/CMakeFiles/publiclibs.dir/unittest/source/*.o
+/testlibs/build/CMakeFiles/publiclibs.dir/tranports/source/*.o

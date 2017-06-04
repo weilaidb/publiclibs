@@ -3,11 +3,11 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_FLAGS = -I/home/weilaidb/publiclibs/testlibs/include -I/home/weilaidb/publiclibs/testlibs/utils/include -I/home/weilaidb/publiclibs/testlibs/unittest/include -I/home/weilaidb/publiclibs/testlibs/unittest/source   
+C_FLAGS = -I/home/weilaidb/publiclibs/testlibs/include -I/home/weilaidb/publiclibs/testlibs/utils/include -I/home/weilaidb/publiclibs/testlibs/tranports/include -I/home/weilaidb/publiclibs/testlibs/unittest/include   
 
 C_DEFINES = 
 
-CXX_FLAGS = -I/home/weilaidb/publiclibs/testlibs/include -I/home/weilaidb/publiclibs/testlibs/utils/include -I/home/weilaidb/publiclibs/testlibs/unittest/include -I/home/weilaidb/publiclibs/testlibs/unittest/source   
+CXX_FLAGS = -I/home/weilaidb/publiclibs/testlibs/include -I/home/weilaidb/publiclibs/testlibs/utils/include -I/home/weilaidb/publiclibs/testlibs/tranports/include -I/home/weilaidb/publiclibs/testlibs/unittest/include   
 
 CXX_DEFINES = 
 
