@@ -22,6 +22,7 @@
 
 #include "chunkref.h"
 #include "err.h"
+#include "mlog_init.h"
 
 #include <string.h>
 
@@ -64,6 +65,8 @@ void nn_chunkref_init (struct nn_chunkref *self, size_t size)
     ch->tag = 0xff;
     rc = nn_chunk_alloc (size, 0, &ch->chunk);
     errno_assert (rc == 0);
+    mlog_byfunc("chunk:%p", ch->chunk);
+    showmlog_byfunc;
 }
 
 /*============================================

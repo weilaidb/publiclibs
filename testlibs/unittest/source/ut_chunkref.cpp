@@ -1,9 +1,11 @@
 #include "ut_chunkref.h"
 
-#include "commonheaders.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+#include "commonheaders.h"
+
 #include "chunkref.h"
 //#include "alloc.h"
 #ifdef __cplusplus
@@ -81,8 +83,42 @@ void ut_nn_chunkref_term(void)
 ============================================*/
 void ut_nn_chunkref_getchunk(void)
 {
+    struct nn_chunkref self;
+    memset(&self, 0, sizeof(self));
+    void *chunk = (void *)malloc(1024);
+    if(!chunk) return;
+    size_t size = 1024;
+    nn_chunkref_init(&self,size);
+    mlogmsg_byfunc(&self, sizeof(self), "self");
+    assert(0xFF == *((uint8_t *)&self));
+    assert(NULL != ((uint8_t *)&self) + 1); 
     
-    void *nn_chunkref_getchunk (struct nn_chunkref *self);
+    void * pchunk = nn_chunkref_getchunk (&self);
+    mlog_byfunc("pchunk:%p", pchunk);
+    mlog_byfunc("self:%p", self);
+    mlog_byfunc("&self:%p", &self);
+
+    mlog_byfunc("(void *)((uint8_t *)&self) + 1:%p", (void *)((uint8_t *)&self) + 1);
+    mlog_byfunc("(void *)((uint8_t *)&self + 1):%p", (void *)((uint8_t *)&self + 1) );
+    mlog_byfunc("*(unsigned int *)((uint8_t *)&self + 1):%p", *(unsigned int *)((uint8_t *)&self + 1) );
+    mlog_byfunc("(void *)((uint8_t *)self + 1):%p", (void *)((uint8_t *)&self + 1) );
+    mlogmsg_byfunc(&self, sizeof(self), "self");
+    showmlogkeys();
+    
+    void *pcompare = (void *)(*(unsigned int *)((uint8_t *)&self + 1));
+    assert(pchunk ==  pcompare);
+
+
+//    mlog_byfunc("&self:%p", &self);
+    mlogmsg_byfunc(&self, sizeof(self), "self");
+    showmlog_byfunc;
+
+    nn_chunkref_term (&self);
+    assert(0x0 == *((uint8_t *)&self));
+    assert(NULL != ((uint8_t *)&self) + 1); 
+
+    free(chunk);
+    
     
 }
 
