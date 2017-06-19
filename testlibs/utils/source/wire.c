@@ -58,7 +58,7 @@ void nn_puts (uint8_t *buf, uint16_t val)
 
 /*============================================
 * FuncName    : nn_getl
-* Description :
+* Description : get buffer value
 * @buf        :
 * Author      :
 * Time        : 2017-06-01
@@ -73,7 +73,7 @@ uint32_t nn_getl (const uint8_t *buf)
 
 /*============================================
 * FuncName    : nn_putl
-* Description :
+* Description : fill value to buffer
 * @buf        :
 * @val        :
 * Author      :

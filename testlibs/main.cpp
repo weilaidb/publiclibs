@@ -13,6 +13,7 @@
 #include "ut_queue.h"
 #include "ut_lists.h"
 #include "ut_literal.h"
+#include "ut_chunkref.h"
 
 /*
 
@@ -44,6 +45,7 @@ int main()
     test_queue();
     test_lists();
     test_literal();
+    test_chunkref();
 
     cout << "Hello World! My Love Baby!!!" << endl;
     return 0;
